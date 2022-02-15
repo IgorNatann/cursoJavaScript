@@ -1,5 +1,66 @@
 // CONDICIONAIS, LAÇOS DE REPETIÇÃO E DATE
 
+// Manipulando elementos da página 
+
+function cliclou () {
+    document.getElementById("agradecimento").innerHTML="Obrigado por clicar";
+
+    //document.getElementById("agradecimento").innerHTML="Obrigado por clicar";
+    //console.log(document.getElementById("agradecimento"));
+   //alert("Obrigado por clicar");
+}
+
+
+//window.open , direciona para um link em outra página.
+function redirecionar () {
+    window.open("https://www.google.com.br/");
+    //window.location.href = "https://www.google.com.br/"; // Abre na mesma página!
+}
+
+// innerHTML: Importa um texto!
+function trocar (elemento) {
+   elemento.innerHTML = "Obrigado por passaro mouse.";
+    //document.getElementById("mousemove").innerHTML="TROLEI!!!!!!";
+    //alert("trocar texto");
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui!";
+    //document.getElementById("mousemove").innerHTML="Passe o mouse aqui!";
+}
+
+function load() {
+    alert("Página Carregada!")
+}
+
+function funcaoChange(elemento) {
+    console.log(elemento.value);
+}
+/* Criação de Funções
+ Função para validar idade
+var validar = 0;
+
+function validaIdade(idade) {
+    if (idade >= 18) {
+        validar = true
+    } else {
+        validar = false
+    }
+    return validar;
+}
+
+var idade = prompt("Qual a sua idade?");
+validaIdade(idade)
+console.log(validar);
+
+
+function soma (n1, n2) {
+    return n1 + n2;
+}
+
+alert(soma(5,10));
+*/
+
 
 //Tratativa de data
 /*

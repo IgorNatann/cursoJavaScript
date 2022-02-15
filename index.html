@@ -5,7 +5,21 @@
         <meta charset = "uft-8">
         <script type = "text/javascript" src = "Js/main.js"></script> <!-- Importando Js -->
     </head>
-    <body>
-      
+    <body onload="load()">
+        <button type="button" onclick="cliclou()">Clique Aqui!!!</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>  
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>  
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+       <!-- <h3 id="agradecimento"></h3> -->
     </body>
 </html>
+
+<!--THIS, adiciona atraves de uma funcition um elemento que pode ser vinculado ao texto para melhor aplicação -->
+<!--OnmouseOver comando que troca um elemento quando o mouse está em cima do button, pode ser usado em diversar ocasiões -->
+<!-- OnMouseOut Comando que altera o elemento assim que o cursor está fora do button, pode ser usado em diversar ocasiões -->
+<!-- OnClick Executa uma ação assim que o button é clicado.-->
